@@ -1,0 +1,33 @@
+<header id="hd">
+    <div class="container">
+        <a class="logo" href="/"><h1><%= config.title %></h1></a>
+        <div class="overview">
+            <h2 class="title">领略前端技术 阅读<%= config.title %></h2>
+            <p class="desc">我们收集每周前端精华文章，集结成册，每周五发送至您的邮箱。</p>
+            <form action="//jiedaibao.us14.list-manage.com/subscribe/post?u=cf2e5a7851d84e32aca2e7f45&id=4e75436b5a" method="post" target="_blank" class="subscribe">
+                <input class="email" placeholder="请输入email" name="EMAIL"><button class="submit" type="submit" title="subscriberList.push(myEmail)">订阅</button>
+            </form>
+            <div class="other">
+                <% if (config.feed){ %>
+                <a class="icon icon-rss" href="<%- config.feed.path %>" title="使用RSS订阅<%= config.title %>"></a>
+                <% } %>
+                <a class="icon icon-wechat" href="javascript:;" title="关注<%= config.title %>微信公众号"><img src="http://p6.qhimg.com/t01e88440b10da41210.png"></a>
+                <a class="icon icon-search" href="/search/" title="搜索<%= config.title %>"></a>
+            </div>
+        </div>
+    </div>
+ </header>
+ <section id="bd">
+    <div class="issues container">
+        <h3 class="title">最新发布的周刊</h3>
+        <ol class="issue-list">
+            <% page.posts.each(function(post) { %>
+                <li><span class="date"><%- date(post.date) %></span><a href="<%- url_for(post.path) %>"><%= config.title %>第<%= post.path.split('/')[1] %>期</a></li>
+            <% }); %>
+        </ol>
+    </div>
+</section>
+<div class="add-link">
+    <a href="/add/" title="推荐文章到<%= config.title %>">推荐文章</a>
+</div>
+<footer id="ft">本网页内容由互联网资料整理而成</footer>

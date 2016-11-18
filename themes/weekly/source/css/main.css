@@ -1,0 +1,289 @@
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font: normal 14px/1.7 "Segoe UI", "Microsoft Yahei", arial, sans-serif;
+    background: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 240px;
+    max-width: 960px;
+    _width: 800px;
+}
+
+.logo {
+    display: block;
+    width: 700px;
+    height: 320px;
+    background: url(/img/weekly-logo.png) no-repeat right 0px;
+    margin: 0 auto;
+}
+
+.logo h1 {
+    display: none
+}
+
+.overview {
+    margin: 0 0 8em 0;
+    text-align: center;
+}
+
+.overview .title {
+    font: normal 48px/1.7 "Segoe UI Light", "Microsoft Jhenghei";
+    margin-top: .7em;
+    margin-bottom: .2em;
+    color: #eee;
+}
+
+.overview .desc {
+    line-height: 2;
+    margin: 1em 0 2em 0;
+    color: #ccc;
+}
+
+.subscribe .email {
+    border: 1px solid #2386f4;
+    font-size: 16px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+    height: 24px;
+    line-height: 24px;
+    padding: 10px 6px;
+    outline: none;
+    margin: 0 10px 0 80px;
+    /*center the input box visually*/
+    width: 290px;
+    color: #666;
+}
+
+.subscribe .email:hover {
+    border-color: #0c7bf8;
+}
+
+.subscribe .email:focus {
+    box-shadow: 0 0 4px #2386f4;
+}
+
+.subscribe .submit {
+    border: 1px solid #fff;
+    font-size: 14px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+    line-height: 22px;
+    padding: 12px 24px 12px 22px;
+    *padding-top: 4px;
+    *padding-bottom: 4px;
+    outline: none;
+    background: #2386f4;
+    color: #fff;
+    margin: 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.subscribe .submit:hover {
+    background: #0c7bf8;
+}
+.subscribe .submit:active {
+    background: #fff;
+    color: #333;
+}
+.other {
+    margin-top: 20px;
+}
+.other .icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin: 0 5px;
+    white-space: nowrap;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in;
+}
+.other .icon:hover {
+    opacity: 1;
+}
+.icon-weibo {
+    background: url(http://p4.qhimg.com/t015d93ebb25351027f.png) no-repeat center center;
+}
+.icon-wechat {
+    position: relative;
+    background: url(http://p4.qhimg.com/t0171794bc3ea6e2285.png) no-repeat center center;
+}
+.icon-wechat img {
+    position: absolute;
+    top: 32px;
+    left: -100px;
+    display: none;
+    z-index: 4;
+}
+.icon-wechat:hover img {
+    display: block;
+}
+.icon-rss {
+    background: url(http://p4.qhimg.com/t01698e57bb5a2bf5db.png) no-repeat center center;
+}
+.icon-search {
+    background: url(http://p4.qhimg.com/t01e4fd8632b0e7d312.png) no-repeat center center;
+}
+.issues {
+    width: 96%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.issues .title {
+    font: normal 48px/1.25 "Segoe UI Light", "Segoe UI", "Microsoft Jhenghei", "Microsoft Yahei", arial, sans-serif;
+    color: #2386f4;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 1em 0 1em;
+}
+.issue-list {
+    -webkit-column-width: 400px;
+    -moz-column-width: 400px;
+    column-width: 400px;
+    -webkit-column-gap: 6em;
+    -moz-column-gap: 6em;
+    column-gap: 6em;
+}
+.issue-list li {
+    padding: 8px 0;
+    background: url('data:image/gif;base64,R0lGODlhBAABAIAAAP///93d3SH5BAEHAAAALAAAAAAEAAEAAAIDBBIFADs=') repeat-x 0 center;
+}
+.issue-list li:hover {
+    background-image: url('data:image/gif;base64,R0lGODlhBAABAIAAAP///5mZmSH5BAEHAAAALAAAAAAEAAEAAAIDBBIFADs=');
+}
+.issue-list a {
+    color: #666;
+    font-size: 16px;
+    padding-right: 6px;
+    background: #f1f1f1;
+}
+.issue-list a:hover {
+    color: #389F0C;
+}
+.issue-list a:visited {
+    color: purple;
+}
+.issue-list .date {
+    float: right;
+    color: #999;
+    background: #f1f1f1;
+    padding-left: 6px;
+    margin-top: 2px;
+}
+.issue-list li:hover .date {
+    color: #666;
+}
+#hd {
+    background: #333 url(http://p6.qhimg.com/t016cd65e58d77a94ee.png);
+    color: #fff;
+}
+#hd .container {
+    position: relative;
+    *zoom: 1;
+    padding-bottom: 10px;
+}
+#bd {
+    display: block;
+    position: relative;
+    padding: 50px 0 70px;
+    overflow: hidden;
+    *zoom: 1;
+    background: #f1f1f1;
+}
+#ft {
+    padding: 24px 0;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    background: #333
+}
+.ds-thread {
+    width: 98%;
+    padding-top: 60px;
+}
+.add-link {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+.add-link a {
+    font-size: 12px;
+    color: #eee;
+    display: block;
+    text-align: center;
+    width: 130px;
+    position: absolute;
+    top: 24px;
+    left: -10px;
+    background: #222;
+    line-height: 25px;
+    letter-spacing: 3px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px solid #666;
+}
+.add-link a:hover {
+    background: #000;
+    color: #eee;
+    text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+    .logo {
+        background-size: 80% auto;
+        width: auto;
+        height: 300px;
+        background-position: right center;
+    }
+    
+    .overview {
+        margin-bottom: 1em;
+    }
+    
+    .overview .title,
+    .overview .desc {
+        display: none;
+    }
+    
+    .subscribe .email {
+        width: 40%;
+        margin-left: 0;
+    }
+    
+    .issues .title {
+        font-size: 3em;
+        margin-top: 0.2em;
+    }
+}

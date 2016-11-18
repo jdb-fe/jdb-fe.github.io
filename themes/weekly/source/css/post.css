@@ -1,0 +1,421 @@
+html,
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+article,
+header,
+footer,
+section {
+    display: block;
+}
+
+body {
+    font: normal 14px/1.7 "Segoe UI", "Microsoft Yahei", arial, sans-serif;
+    background: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    min-width: 240px;
+    max-width: 960px;
+    _width: 800px;
+}
+
+#doc {
+    *zoom: 1
+}
+
+#hd {
+    background: #333 url(http://p0.qhimg.com/t016cd65e58d77a94ee.png);
+    color: #fff;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#hd .container {
+    position: relative;
+}
+
+#hd .logo {
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+#hd .logo a {
+    height: 48px;
+    color: #fff;
+}
+
+#hd .logo a:hover {
+    text-decoration: none;
+}
+
+#hd .issue {
+    position: absolute;
+    top: 0;
+    right: 90px;
+    width: 48px;
+    height: 48px;
+    font-family: Georgia;
+    background: #2386f4;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.2;
+    padding-top: 6px;
+}
+
+#hd .issue:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 16px 24px 0 0;
+    border-color: #2386f4 transparent transparent transparent;
+}
+
+#hd .issue:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 24px 16px 0;
+    border-color: transparent #2386f4 transparent transparent;
+}
+
+#hd .issue em {
+    display: block;
+    font-style: normal;
+    font-size: 18px;
+}
+
+#hd .share,
+#hd .add-link {
+    position: absolute;
+    top: 8px;
+    display: block;
+    width: 32px;
+    height: 0;
+    padding-top: 32px;
+    overflow: hidden;
+    opacity: 0.7;
+    -webkit-transition: opacity 0.1s ease-in;
+    transition: opacity 0.1s ease-in;
+}
+
+#hd .share {
+    right: 8px;
+    background: url(http://p4.qhimg.com/t015d93ebb25351027f.png) no-repeat;
+}
+
+#hd .add-link {
+    right: 45px;
+    background: url(http://p9.qhimg.com/t011016d2abc4e457e8.png) no-repeat;
+}
+
+#hd .add-link:hover,
+#hd .share:hover {
+    opacity: 1;
+}
+
+#main {
+    display: block;
+    top: 48px;
+    position: relative;
+    padding: 15px 0;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#main:after {
+    display: block;
+    content: '';
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#content {
+    margin-right: 300px;
+}
+
+#aside {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+    width: 240px;
+    padding: 25px 15px 15px;
+    display: block;
+}
+
+#aside h2 {
+    font: normal 22px/1.25 "Segoe UI Light", "Segoe UI", "Microsoft Jhenghei", "Microsoft Yahei", arial, sans-serif;
+    color: #777;
+}
+
+.issues {
+    margin-top: 10px;
+    line-height: 3;
+}
+
+.issues li {
+    border-top: 1px solid #eee;
+}
+
+.issues a {
+    color: #777;
+}
+
+.issues .date {
+    font-size: 12px;
+    color: #bbb;
+    float: right;
+    margin-top: 3px;
+}
+
+.article {
+    padding: 10px 15px;
+}
+
+.article:hover {
+    background: #f0f0f0;
+}
+
+#content h3 {
+    font: normal 22px/1.25 "Segoe UI Light", "Segoe UI", "Microsoft Jhenghei", "Microsoft Yahei", arial, sans-serif;
+    margin: 1em 0 .5em;
+}
+
+#content h3 a {
+    color: #333;
+}
+
+#content h3 a:visited {
+    color: purple;
+}
+
+#content p {
+    margin-top: 10px;
+    padding-left: 2px;
+    color: #666;
+}
+
+#content p a {
+    color: #666;
+    text-decoration: underline;
+}
+
+#content p a:hover {
+    color: #333;
+}
+
+.subscribe {
+    margin: 20px 0 30px;
+}
+
+.subscribe .email {
+    border: 1px solid #999;
+    -webkit-box-shadow: none;
+    padding: 8px 0 8px 4px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.subscribe .action {
+    display: inline;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.subscribe .button {
+    background: #2386f4;
+    border-radius: 4px;
+    line-height: 2.5;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    color: #fff;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.subscribe .button:hover {
+    background: #389F0C;
+}
+
+.subscribe .button:active {
+    background: #7DC219;
+}
+
+#content h2 {
+    font: normal 22px/1.25 "Segoe UI Light", "Segoe UI", "Microsoft Jhenghei", "Microsoft Yahei", arial, sans-serif;
+    line-height: 2;
+    padding: 0 15px;
+    background: #2386f4;
+    color: #fff;
+    margin: 1em .5em 1em 0;
+}
+
+#ft {
+    padding: 24px 0;
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.comments {
+    background: #f5f5f5;
+    margin-top: 60px;
+    overflow: hidden;
+    padding: 0 15px;
+}
+
+#disqus_thread {
+    margin: 15px 15px 15px;
+}
+
+@media screen and (max-width: 600px) {
+    #aside {
+        position: static;
+    }
+    #content {
+        margin: 0;
+    }
+    .article .title,
+    #aside h2 {
+        font-size: 18px;
+    }
+    #aside {
+        width: inherit;
+    }
+    #content h2 {
+        font-size: 18px;
+        margin-left: 0;
+        margin-right: 0
+    }
+    #hd .add-link {
+        right: 50px;
+    }
+}
+
+@media screen and (min-width: 1310px) {
+    #hd .logo {
+        margin-left: 0;
+    }
+    #hd .share {
+        right: 2px;
+    }
+}
+
+#postface {
+    margin: 1em;
+    display: none;
+}
+
+.wechat #postface {
+    display: block;
+}
+
+#postface p {
+    text-align: center;
+    max-width: 30em;
+    margin: 1em auto;
+}
+
+#postface p em {
+    font-style: normal;
+    color: #007AAA;
+}
+
+#postface .desc {
+    text-align: left;
+}
+
+#articles article {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+#articles article:last-child {
+    border: none;
+}
+
+#articles article p {
+    margin: 5px 0;
+}
+
+#articles article .tags {
+    font-size: 12px;
+    opacity: .9;
+}
+
+#articles article .tags .tag {
+    margin-right: 8px;
+}
+
+#articles .notice {
+    color: #666;
+    margin-top: 20px;
+    display: none;
+}
+
+.no-data .blank {
+    display: block !important;
+}
+
+.ajaxing .loading {
+    display: block !important;
+}
+
+#st-search-form input[type="submit"] {
+    float: right;
+    margin-left: 15px;
+}
+
+.bfc {
+    overflow: hidden;
+    width: auto;
+}
+
+.bfc #st-search-input {
+    height: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
