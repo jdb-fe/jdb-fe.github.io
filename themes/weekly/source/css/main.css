@@ -39,7 +39,7 @@ a:hover {
     display: block;
     width: 700px;
     height: 320px;
-    background: url(/img/weekly-logo.png) no-repeat right 0px;
+    background: url(../img/weekly-logo.png) no-repeat right 0px;
     margin: 0 auto;
 }
 
@@ -131,11 +131,11 @@ a:hover {
     opacity: 1;
 }
 .icon-weibo {
-    background: url(http://p4.qhimg.com/t015d93ebb25351027f.png) no-repeat center center;
+    background: url(../img/icon-weibo.png) no-repeat center center;
 }
 .icon-wechat {
     position: relative;
-    background: url(http://p4.qhimg.com/t0171794bc3ea6e2285.png) no-repeat center center;
+    background: url(../img/icon-wechat.png) no-repeat center center;
 }
 .icon-wechat img {
     position: absolute;
@@ -148,10 +148,10 @@ a:hover {
     display: block;
 }
 .icon-rss {
-    background: url(http://p4.qhimg.com/t01698e57bb5a2bf5db.png) no-repeat center center;
+    background: url(../img/icon-rss.png) no-repeat center center;
 }
 .icon-search {
-    background: url(http://p4.qhimg.com/t01e4fd8632b0e7d312.png) no-repeat center center;
+    background: url(../img/icon-search.png) no-repeat center center;
 }
 .issues {
     width: 96%;
@@ -203,7 +203,7 @@ a:hover {
     color: #666;
 }
 #hd {
-    background: #333 url(http://p6.qhimg.com/t016cd65e58d77a94ee.png);
+    background: #333 url(../img/bg.png);
     color: #fff;
 }
 #hd .container {

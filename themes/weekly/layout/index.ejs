@@ -11,7 +11,7 @@
                 <% if (config.feed){ %>
                 <a class="icon icon-rss" href="<%- config.feed.path %>" title="使用RSS订阅<%= config.title %>"></a>
                 <% } %>
-                <a class="icon icon-wechat" href="javascript:;" title="关注<%= config.title %>微信公众号"><img src="http://p6.qhimg.com/t01e88440b10da41210.png"></a>
+                <a class="icon icon-wechat" href="javascript:;" title="关注<%= config.title %>微信公众号"><img src="/img/qrcode.jpg"></a>
                 <a class="icon icon-search" href="/search/" title="搜索<%= config.title %>"></a>
             </div>
         </div>
@@ -21,7 +21,7 @@
     <div class="issues container">
         <h3 class="title">最新发布的周刊</h3>
         <ol class="issue-list">
-            <% page.posts.each(function(post) { %>
+            <% page.posts.sort('date', 1).each(function(post) { %>
                 <li><span class="date"><%- date(post.date) %></span><a href="<%- url_for(post.path) %>"><%= config.title %>第<%= post.path.split('/')[1] %>期</a></li>
             <% }); %>
         </ol>
