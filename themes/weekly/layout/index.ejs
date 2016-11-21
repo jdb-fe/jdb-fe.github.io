@@ -21,13 +21,13 @@
     <div class="issues container">
         <h3 class="title">最新发布的周刊</h3>
         <ol class="issue-list">
-            <% page.posts.sort('date', 1).each(function(post) { %>
+            <% page.posts.sort('title', -1).each(function(post) { %>
                 <li><span class="date"><%- date(post.date) %></span><a href="<%- url_for(post.path) %>"><%= config.title %>第<%= post.path.split('/')[1] %>期</a></li>
             <% }); %>
         </ol>
     </div>
 </section>
 <div class="add-link">
-    <a href="/add/" title="推荐文章到<%= config.title %>">推荐文章</a>
+    <a href="https://jdb-fe.github.io/issues/1/" title="推荐文章到<%= config.title %>">推荐文章</a>
 </div>
 <footer id="ft">本网页内容由互联网资料整理而成</footer>

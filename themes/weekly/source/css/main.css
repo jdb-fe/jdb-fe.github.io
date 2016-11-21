@@ -139,7 +139,8 @@ a:hover {
 }
 .icon-wechat img {
     position: absolute;
-    top: 32px;
+    width: 250px;
+    top: 40px;
     left: -100px;
     display: none;
     z-index: 4;
