@@ -419,3 +419,9 @@ a:hover {
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
+/*多说评论框*/
+.ds-thread {
+    width: 52%;
+    margin: 50px auto;
+    border: 1px solid rgba(0,0,0,0.13);
+}
