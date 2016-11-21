@@ -1,6 +1,6 @@
 # weekly ![build-info](https://travis-ci.org/jdb-fe/weekly.svg)
 
-前端周刊
+[前端周刊](https://jdb-fe.github.io/)
 
 ### 成员
 - [余焕柱](https://github.com/huanz)
