@@ -45,6 +45,10 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+
+# 多说评论系统
+duoshuo_shortname: jdb-fe
+
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
