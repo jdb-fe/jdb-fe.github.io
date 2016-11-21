@@ -3,7 +3,7 @@ node_js:
   - "5.9"
 branches:
   only:
-  - master
+  - source
 before_install:
 - npm install hexo-cli -g
 install:
@@ -16,10 +16,10 @@ script:
 after_success:
 - mkdir .deploy
 - cd .deploy
-- git clone --depth 1 --branch gh-pages --single-branch $GH_REPO . || (git init && git remote add -t gh-pages origin $GH_REPO)
+- git clone --depth 1 --branch master --single-branch $GH_REPO . || (git init && git remote add -t master origin $GH_REPO)
 - rm -rf ./*
 - cp -r ../public/* .
 - git add -A .
 - git commit -m "site updated via travis-ci at $(date -u +'%Y-%m-%d %H:%M:%S')"
-- git branch -m gh-pages
-- git push -q $GH_REPO HEAD:gh-pages
+- git branch -m master
+- git push -q $GH_REPO HEAD:master
