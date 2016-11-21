@@ -16,10 +16,10 @@ script:
 after_success:
 - mkdir .deploy
 - cd .deploy
-- git clone --depth 1 --branch gh-pages --single-branch $GH_TOKEN . || (git init && git remote add -t gh-pages origin $GH_TOKEN)
+- git clone --depth 1 --branch gh-pages --single-branch $GH_REPO . || (git init && git remote add -t gh-pages origin $GH_REPO)
 - rm -rf ./*
 - cp -r ../public/* .
 - git add -A .
 - git commit -m "site updated via travis-ci at $(date -u +'%Y-%m-%d %H:%M:%S')"
 - git branch -m gh-pages
-- git push -q $GH_TOKEN HEAD:gh-pages
+- git push -q $GH_REPO HEAD:gh-pages
