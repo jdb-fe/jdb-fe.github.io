@@ -47,7 +47,7 @@ a:hover {
 }
 
 #hd {
-    background: #333 url(http://p0.qhimg.com/t016cd65e58d77a94ee.png);
+    background: #333 url(../img/bg.png);
     color: #fff;
     position: fixed;
     z-index: 1;
@@ -138,12 +138,12 @@ a:hover {
 
 #hd .share {
     right: 8px;
-    background: url(http://p4.qhimg.com/t015d93ebb25351027f.png) no-repeat;
+    background: url(../img/share.png) no-repeat;
 }
 
 #hd .add-link {
     right: 45px;
-    background: url(http://p9.qhimg.com/t011016d2abc4e457e8.png) no-repeat;
+    background: url(../img/add-link.png) no-repeat;
 }
 
 #hd .add-link:hover,

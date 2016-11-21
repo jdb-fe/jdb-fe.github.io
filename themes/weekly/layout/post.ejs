@@ -30,7 +30,7 @@
         <% if (site.posts.length) { %>
             <h2>最新发布</h2>
             <ul class="issues" id="latest_issues">
-            <% site.posts.sort('date', -1).limit(15).each(function(post) { %>
+            <% site.posts.sort('date', 1).limit(15).each(function(post) { %>
                 <li><span class="date"><%- date(post.date) %></span><a href="<%- url_for(post.path) %>"><%= config.title %>第<%= post.title %>期</a></li>
             <% }); %>
              </ul>
