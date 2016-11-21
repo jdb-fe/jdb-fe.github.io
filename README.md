@@ -3,7 +3,7 @@
 前端周刊
 
 ### 成员
-- [余焕柱](https://github.com/bukas)
+- [余焕柱](https://github.com/huanz)
 - [赵涵宇](https://github.com/bigfly)
 - [钊彬](https://github.com/xiaodiao1212)
 - [郑海旺](https://github.com/zhengxkq)
