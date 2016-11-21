@@ -23,6 +23,13 @@
     <meta name="browsermode" content="application">
     <meta name="keywords" content="<%= config.keyword %>">
     <meta name="description" content="<%= config.description %>">
+    <link rel="mask-icon" href="/img/logo.svg" color="#0c7bf8">
+    <link rel="apple-touch-icon" href="/img/icon@180.png">
+    <link rel="icon" href="/img/favicon@16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/img/favicon@32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/favicon@48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/img/favicon@62.png" sizes="62x62" type="image/png">
+    <link rel="icon" href="/img/favicon@192.png" sizes="192x192" type="image/png">
     <% if (config.feed){ %>
         <%- feed_tag(config.feed.path, {
             title: config.title
