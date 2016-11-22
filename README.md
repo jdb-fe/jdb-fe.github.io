@@ -1,4 +1,4 @@
-# weekly [![build-info](https://travis-ci.org/jdb-fe/weekly.svg)](https://travis-ci.org/jdb-fe/weekly)
+# weekly [![build-info](https://travis-ci.org/jdb-fe/jdb-fe.github.io.svg)](https://travis-ci.org/jdb-fe/jdb-fe.github.io)
 
 [前端周刊](https://jdb-fe.github.io/)
 
