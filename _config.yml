@@ -67,10 +67,10 @@ pagination_dir: page
 theme: weekly
 
 # Feed
-feed:
-  type: atom
-  path: atom.xml
-  limit: 0
+# feed:
+#   type: atom
+#   path: atom.xml
+#   limit: 0
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
